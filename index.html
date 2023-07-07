@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeshyKoh</title>
+</head>
+<body>
+    <script>
+        function generate() {
+            var input = document.getElementById("input").value;
+            var separate = input.split(" ");
+            var result = separate.join(" 🤸‍♀️ ");
+            document.getElementById("result").textContent = result
+        }
+    </script>
+    <div>
+        <h1>Beshy 🤸‍♀️ Koh 🤸‍♀️</h1>
+        <input type="text" id="input" placeholder="Type here">
+        <button onclick="generate()">Generate</button>
+        <hr>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
